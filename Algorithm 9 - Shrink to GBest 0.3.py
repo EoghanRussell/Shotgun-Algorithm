@@ -524,7 +524,7 @@ def random_search(function, lbounds, ubounds, budget):
                         g_best = local_position
                     
                     random_starts = 1
-                    while (random_starts < total_budget * 0.005) and (budget > 0):
+                    while (random_starts < total_budget * 0.0005) and (budget > 0):
                         restart_position = new_individual_shrink_ws(list(lbounds), list(ubounds), g_best, dim, progress)
                         restart_fitness = function(list(restart_position))
                         budget -= 1
