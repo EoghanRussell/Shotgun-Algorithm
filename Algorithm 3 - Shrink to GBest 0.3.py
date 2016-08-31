@@ -206,8 +206,6 @@ def roulette (fitnessScores):
 def genetic_Algorithm(function, genetic_fitness, genetic_position, global_best_fitness, g_best, dim, budget,lbounds,ubounds):
     generation = 1
     while(generation <= 100):
-        if generation == 2:
-            generation = 2
         next_generation_position = []
         next_generation_fitness = []
         population = len(genetic_position)
